@@ -7,9 +7,10 @@ import { BrowserRouter as Router, Routes, Route, BrowserRouter } from 'react-rou
 
 function App() {
 	return (
-		<div>
+		<div id="outer-container">
 			<BrowserRouter>
-				<Routes>
+				<NavBar pageWrapId={'page-wrap'} outerContainerId={'outer-container'}/>
+				<Routes id="page-wrap">
 					<Route path="/" element={<Home />} />
 					<Route path="/login" element={<Login />} />
 					<Route path="/register" element={<Register />} />

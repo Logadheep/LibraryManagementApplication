@@ -3,7 +3,10 @@ import { Link } from 'react-router-dom';
 import './Login.css';
 
 const verifyLogin = () => {
-
+	//redirect to home page with logged in status
+	//change path to home page
+	//change loggedIn to true
+	
 }
 const Login = () => {
 	return (
