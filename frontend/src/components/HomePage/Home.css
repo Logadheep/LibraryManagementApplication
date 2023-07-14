@@ -1,0 +1,46 @@
+.home-page {
+    margin-top: 50px;
+    /* position: fixed; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 94vh;
+    width: 100vw;
+    font-family: 'Roboto', sans-serif;
+    background: url(libraryhome.jpg) fixed no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+
+.home-page .card{
+    margin: 10vh 10vw;
+    width: 40vw;
+    height: 50vh;
+    padding: 5vh;
+    border-radius: 40px;
+    background: #4e63b59f;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+    align-items: center;
+    color: #fff;
+}
+
+.home-page .card .card-body{
+    padding: 0;
+}
+
+.home-page .card .card-body h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.home-page .card a {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.home-page .card a:hover {
+    color: #0084ff;
+}

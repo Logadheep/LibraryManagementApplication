@@ -1,5 +1,5 @@
 .login-register {
-    background: url(librry.jpg) center center no-repeat;
+    background: url(library-login-register.jpg) center center no-repeat;
     background-size: cover;
     font: white;
     margin:0;
@@ -16,7 +16,7 @@
     text-align: center;
     display: flex;
     flex-direction: column;
-    background-color: rgba(195, 28, 28, 0.5);
+    background-color: rgba(61, 119, 191, 0.84);
     padding: 20px;
     border-radius: 20px;
     border-color: black solid 2px;
@@ -25,7 +25,7 @@
     font: white;
 }
 
-p {
+.login-register p {
     color: white;
     text-decoration: none;
     font-size: 20px;
@@ -33,7 +33,7 @@ p {
     margin-bottom: 10px;
 }
 
-a {
+.login-register a {
     color: white;
     text-decoration: none;
     font-size: 17px;
@@ -41,8 +41,8 @@ a {
     margin-bottom: 10px;
 }
 
-a:hover {
-    color: #ff5900;
+.login-register a:hover {
+    color: #0066ff;
     font-size: 20px;
 }
 
@@ -52,7 +52,7 @@ a:hover {
     border-radius: 10px;
     width: 30vw;
     padding: 50px;
-    background-color: rgba(162, 106, 106, 0.79);
+    background-color: rgba(106, 127, 162, 0.79);
 }
 .form-container h1{
     font-size: 30px;
@@ -63,15 +63,15 @@ a:hover {
     border-bottom: 2px solid rgb(201, 141, 141);
 }
 
-label {
+.login-register label {
     font-size: 17px;
     color: white;
     float: left;
 }
 
-input[type="text"] {
+.login-register input[type="text"] {
     width: 100%;
-    background-color: #edb2b25b;
+    background-color: #b2c8ed5b;
     padding: 10px;
     border: 1px solid #1e171793;
     border-radius: 4px;
@@ -80,10 +80,10 @@ input[type="text"] {
     margin-bottom: 16px;
 }
 
-input[type="email"] {
+.login-register input[type="email"] {
     width: 100%;
     padding: 10px;
-    background-color: #edb2b25b;
+    background-color: #b2c1ed5b;
     border: 1px solid #1e171793;
     border-radius: 4px;
     box-sizing: border-box;
@@ -91,10 +91,10 @@ input[type="email"] {
     margin-bottom: 16px;
 }
 
-input[type="date"]{
+.login-register input[type="date"]{
     width: 100%;
     padding: 10px;
-    background-color: #edb2b25b;
+    background-color: #b2c4ed5b;
     border: 1px solid #1e171793;
     border-radius: 4px;
     box-sizing: border-box;
@@ -102,10 +102,10 @@ input[type="date"]{
     margin-bottom: 16px;
 }
 
-input[type="password"] {
+.login-register input[type="password"] {
     width: 100%;
     padding: 10px;
-    background-color: #edb2b25b;
+    background-color: #b2c8ed5b;
     border: 1px solid #1e171793;
     border-radius: 4px;
     box-sizing: border-box;
@@ -113,10 +113,10 @@ input[type="password"] {
     margin-bottom: 16px;
 }
 
-input[type="phone"] {
+.login-register input[type="phone"] {
     width: 100%;
     padding: 10px;
-    background-color: #edb2b25b;
+    background-color: #b2c2ed5b;
     border: 1px solid #1e171793;
     border-radius: 4px;
     box-sizing: border-box;
@@ -124,18 +124,18 @@ input[type="phone"] {
     margin-bottom: 16px;
 }
 
-button[type="submit"] {
-    background-color: #b1232388;
+.login-register button[type="submit"] {
+    background-color: #235cb188;
     color: white;
     padding: 10px 20px;
     width: 60%;
-    border: 2px solid #da412693;
+    border: 2px solid #266eda93;
     border-radius: 10px;
 }
 
-button[type="submit"]:hover {
-    background-color: #cb612877;
-    border: 2px solid #952c2ca4;
+.login-register button[type="submit"]:hover {
+    background-color: #288ccb77;
+    border: 2px solid #2c4d95a4;
 }
 
 .select{
@@ -146,42 +146,42 @@ button[type="submit"]:hover {
     margin-bottom: 10px;
 }
 
-select{
+.login-register select{
     width: 50%;
     padding: 10px;
-    background-color: #edb2b25b;
-    border: 1px solid #1e171793;
+    background-color: #b2c8ed5b;
+    border: 1px solid #17191e93;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
 }
 
-option {
-    background-color: #db3737dd;
+.login-register option {
+    background-color: #3755dbdd;
     color: white;
     padding: 10px;
-    border: 3px solid #d64d4d93;
+    border: 3px solid #4d72d693;
     border-radius: 4px;
     box-sizing: border-box;
     margin-top: 6px;
     margin-bottom: 16px;
 }
 
-option:hover {
-    background-color: #ff5900;
+.login-register option:hover {
+    background-color: #0048ff;
 }
 
-option[selected]:focus {
-    background-color: #e2a686;
+.login-register option[selected]:focus {
+    background-color: #869de2;
 }
 
-option:focus-visible {
-    background-color: #e2a686;
+.login-register option:focus-visible {
+    background-color: #86ace2;
 }
 
-option:checked {
-    background-color: #e2a686;
+.login-register option:checked {
+    background-color: #86a6e2;
 }
 
 .loginType label {
@@ -206,7 +206,7 @@ option:checked {
         text-align: center;
         display: flex;
         flex-direction: column;
-        background-color: rgba(195, 28, 28, 0.5);
+        background-color: rgba(28, 75, 195, 0.5);
         padding: 20px;
         border-radius: 20px;
         border-color: black solid 2px;
@@ -221,7 +221,7 @@ option:checked {
         border-radius: 10px;
         width: 80vw;
         padding: 50px;
-        background-color: rgba(255, 183, 183, 0.389);
+        background-color: rgba(183, 207, 255, 0.389);
     }
 
     .form-container h1 {
@@ -230,56 +230,56 @@ option:checked {
         text-align: center;
         margin-bottom: 20px;
         padding-bottom: 20px;
-        border-bottom: 2px solid rgb(50, 31, 31);
+        border-bottom: 2px solid rgb(31, 41, 50);
     }
 
-    label {
+    .login-register label {
         font-size: 15px;
         color: white;
         float: left;
     }
 
-    input[type="text"] {
+    .login-register input[type="text"] {
         width: 100%;
-        background-color: #3e282842;
+        background-color: #28333e42;
         padding: 2px;
-        border: 1px solid #1e171793;
+        border: 1px solid #17191e93;
         border-radius: 4px;
         box-sizing: border-box;
         margin-top: 6px;
         margin-bottom: 6px;
     }
 
-    input[type="email"] {
+    .login-register input[type="email"] {
         width: 100%;
         padding: 2px;
-        background-color: #3e282842;
-        border: 1px solid #1e171793;
+        background-color: #282f3e42;
+        border: 1px solid #17191e93;
         border-radius: 4px;
         box-sizing: border-box;
         margin-top: 6px;
         margin-bottom: 6px;
     }
 
-    input[type="date"] {
+    .login-register input[type="date"] {
         width: 100%;
         padding: 2px;
-        background-color: #3e282842;
-        border: 1px solid #1e171793;
+        background-color: #282e3e42;
+        border: 1px solid #17181e93;
         border-radius: 4px;
         box-sizing: border-box;
     }
-    input[type="password"] {
+    .login-register input[type="password"] {
         width: 100%;
         padding: 2px;
-        background-color: #3e282842;
-        border: 1px solid #1e171793;
+        background-color: #282d3e42;
+        border: 1px solid #171a1e93;
         border-radius: 4px;
         box-sizing: border-box;
         margin-top: 6px;
         margin-bottom: 6px;
     }	
-    .select{
+    .login-register .select{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -287,11 +287,11 @@ option:checked {
         align-items: center;
         margin-bottom: 6px;
     }
-    select{
+    .login-register select{
         width: 50%;
         padding: 2px;
-        background-color: #3e282842;
-        border: 1px solid #1e171793;
+        background-color: #28313e42;
+        border: 1px solid #171a1e93;
         border-radius: 4px;
         box-sizing: border-box;
         margin-top: 6px;
@@ -308,28 +308,27 @@ option:checked {
         margin-bottom: 6px;
     }
 
-    input[type="phone"] {
+    .login-register input[type="phone"] {
         width: 100%;
         padding: 2px;
-        background-color: #3e282842;
-        border: 1px solid #1e171793;
+        background-color: #28303e42;
+        border: 1px solid #171b1e93;
         border-radius: 4px;
         box-sizing: border-box;
         margin-top: 6px;
         margin-bottom: 6px;
     }
-    a {
+    .login-register a {
         color: rgb(255, 255, 255);
         text-decoration: none;
         font-size: 12px;
     }
-    a:hover {
-        color: #ff5900;
+    .login-register a:hover {
+        color: #0066ff;
         text-decoration: underline;
         font-size: medium;
     }
-    p {
-        color: rgb(255, 255, 255);
+    .login-register p {
         font-size: 12px;
     }
 }

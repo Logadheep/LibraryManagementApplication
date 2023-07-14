@@ -1,38 +1,40 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
 
-const verifyLogin = () => {
-	//redirect to home page with logged in status
-	//change path to home page
-	//change loggedIn to true
-	
-}
 const Login = () => {
+	const navigate = useNavigate();
+	const verifyLogin = (data) => {
+		data.preventDefault();
+		console.log(data);
+		// redirect to home page
+		// go to home page
+		navigate('/dashboard', { replace: true });
+	}
 	return (
 		<div className="login-register">
 			<div className="form">
-			<form className="form-container">
+			<form className="form-container" onSubmit={verifyLogin}>
 				<h1>Login</h1>
 					<div>
-						<label for="username">Username</label>
+						<label htmlFor="username">Username</label>
 						<input required name="username" id="username" type="text" placeholder="Enter Username" />
 					</div>
 					<div>
-						<label>Password</label>
+						<label htmlFor='password'>Password</label>
 						<input required name="password" id="password" type="password" placeholder="Enter Password" />
 					</div>
 					<div className="loginType"> 
-						<label for="user">Logging in as </label>
+						<label htmlFor="user">Logging in as </label>
 						<p></p>
 						<select name="user" id="user">
-							<option selected disabled>Select</option>
+							<option defaultChecked disabled>Select</option>
 							<option value="student">Student</option>
 							<option value="teacher">Teacher</option>
 							<option value="admin">Admin</option>
 						</select>
 					</div>
-					<button type="submit" onSubmit={verifyLogin}>Login</button>
+					<button type="submit">Login</button>
 			</form>
 			<p>New to the library? <Link to="/register">Register</Link></p>
 			</div>

@@ -1,12 +1,21 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css';
+import { useNavigate } from 'react-router-dom';
 
 const Login = () => {
+	const navigate = useNavigate();
+	const verifyRegister = (data) => {
+		data.preventDefault();
+		console.log(data);
+		// redirect to home page
+		// go to home page
+		navigate('/dashboard', { replace: true });
+	}
 	return (
 		<div className="login-register">
 			<div className="form">
-			<form className="form-container">
+			<form className="form-container" onSubmit={verifyRegister}>
 				<h1>Register</h1>
 					<div>
 						<label>Full Name</label>
