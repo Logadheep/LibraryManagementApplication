@@ -1,15 +1,29 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './Login.css';
+import axios from 'axios';
+
+const credentials = [{
+	'admin': 'admin123'
+},
+{
+	'student':'student123',
+},
+{
+	'teacher': 'teacher123',
+}]
 
 const Login = () => {
 	const navigate = useNavigate();
 	const verifyLogin = (data) => {
 		data.preventDefault();
-		console.log(data);
-		// redirect to home page
-		// go to home page
-		navigate('/dashboard', { replace: true });
+		if(credentials.find(cred => cred[data.target.username.value] === data.target.password.value)) {
+			window.alert("Login Successful")
+			navigate('/home', { replace: true });
+		}
+		else{
+			window.alert("Either Username or password incorrect")
+		}
 	}
 	return (
 		<div className="login-register">

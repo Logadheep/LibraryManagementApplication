@@ -2,6 +2,7 @@ import { setState, useState } from 'react'
 import React from 'react'
 import Profile from '../components/Profile/Profile'
 import './NavBar.css'
+import Search from '../components/Search/Search'
 
 const searchbutton =
 	<svg width="25" height="30" xmlns="http://www.w3.org/2000/svg">
@@ -21,6 +22,17 @@ const NavBar = () => {
 		profile_Menu.style.display = "none";
 	}
 	const [loggedIn, setLoggedIn] = useState(false)
+	const activateSearch = (e) => {
+		e.preventDefault()
+		const search = document.querySelector('.search')
+		if (loggedIn) {
+			//make search block active
+			search.style.display = "block";
+		}
+		else {	
+			alert("Please login to search for books")
+		}
+	}
 	return (
 		<>
 			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -32,7 +44,8 @@ const NavBar = () => {
 					</button>
 					<div className="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
 						<div className="navbar-nav">
-							<input type="search" placeholder="Search books" className="search-bar" /><button className="search-btn">{searchbutton}</button>
+							<input type="search" placeholder="Search books" className="search-bar" /><button onClick={activateSearch} className="search-btn">{searchbutton}</button>
+							
 							<a className="nav-link" href="/dashboard">Dashboard</a>
 							<a className="nav-link" href="/about">About</a>
 							<a className="nav-link" href="/request">Request</a>

@@ -1,0 +1,363 @@
+/* index.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+h2{
+  margin-bottom: 50px;
+}
+
+.App {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(components/library-login-register.jpg) 100% no-repeat fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+/* Home.js */
+.home-container {
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.home-container h2 {
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
+.home-container p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px;
+}
+
+/* index.css */
+
+.books-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.members-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+.members-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/* AddBook.js, RequestBook.js, and ManageUsers.js */
+
+.register-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.register-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.register-container p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.register-container form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.register-container div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.register-container label {
+  font-weight: bold;
+}
+
+.register-container input,
+.register-container select {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.register-container button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.register-container button:hover {
+  background-color: #0056b3;
+}
+
+.register-container .error {
+  color: red;
+  font-size: 14px;
+}
+
+.register-container .success {
+  color: green;
+  font-size: 14px;
+}
+
+.register-container label {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+
+.login-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.login-container p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.login-container label {
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+}
+
+.login-container input {
+  padding: 8px;
+  font-size: 16px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+}
+
+.addbook-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.addbook-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.addbook-container p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.addbook-container form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.addbook-container div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.addbook-container label {
+  font-weight: bold;
+}
+
+.addbook-container input,
+
+.addbook-container select {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.addbook-container button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.addbook-container button:hover {
+  background-color: #0056b3;
+}
+
+.addbook-container .error {
+  color: red;
+  font-size: 14px;
+}
+
+.manage-user-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.manage-user-container h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.manage-user-container p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.manage-user-container form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.manage-user-container div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.manage-user-container label {
+  font-weight: bold;
+}
+
+.manage-user-container input,
+.manage-user-container select {
+  padding: 8px;
+  font-size: 16px;
+}
+
+.manage-user-container button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.manage-user-container button:hover {
+  background-color: #0056b3;
+}
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input,
+form select {
+  padding: 8px;
+  font-size: 16px;
+}
+
+form button {
+  padding: 10px 15px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+/* index.css */
+
+/* NavBar.js */
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav {
+  background-color: #007bff;
+  padding: 10px 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* index.css */
+
+/* Footer.js */
+footer {
+  /* position: relative; */
+  background-color: #007bff;
+  padding: 10px 0;
+  text-align: center;
+  color: #fff;
+  width: 100%;
+  margin-top: auto;
+  /* z-index: 1000; */
+}

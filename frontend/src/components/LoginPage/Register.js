@@ -2,15 +2,19 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Login.css';
 import { useNavigate } from 'react-router-dom';
+//importing acios for xmlhttpreqest
+import axios from 'axios';
 
 const Login = () => {
 	const navigate = useNavigate();
 	const verifyRegister = (data) => {
 		data.preventDefault();
+		window.alert("Registration Successful")
 		console.log(data);
 		// redirect to home page
 		// go to home page
-		navigate('/dashboard', { replace: true });
+		axios.send('http://localhost:8080/register', data)
+		navigate('/home', { replace: true });
 	}
 	return (
 		<div className="login-register">

@@ -1,0 +1,87 @@
+.request-form-page {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    background: url(../HomePage/libraryhome.jpg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;    
+}
+
+.request-form-page h1 {
+    margin-left: 40px;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+
+.request-form-page p {
+    margin: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.request-form-container {
+    margin: 20vh;
+    width: 50%;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    background-color: rgba(67, 89, 234, 0.727);
+}
+
+.request-form-container h1 {
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.request-form-container p {
+    margin: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+.request-form-container label {
+    margin: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}   
+
+.request-form-container input {
+    width: 100%;
+    padding: 10px;
+    background-color: #b2c4ed5b;
+    border: 1px solid #1e171793;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}   
+
+.request-form-container textarea {
+    width: 100%;
+    padding: 10px;
+    background-color: #b2c4ed5b;
+    border: 1px solid #1e171793;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+}
+
+.request-form-container button {
+    background-color: #235cb188;
+    color: white;
+    padding: 10px 20px;
+    width: 60%;
+    border: 2px solid #266eda93;
+    border-radius: 10px;
+}
+
+.request-form-container button[type="submit"]:hover {
+    background-color: #288ccb77;
+    border: 2px solid #2c4d95a4;
+}
+

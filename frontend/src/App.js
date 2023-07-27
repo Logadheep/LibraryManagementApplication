@@ -11,11 +11,11 @@ import About from './components/About/About';
 
 function App() {
 	return (
-		<div>
 			<BrowserRouter>
 				<NavBar/>
 				<Routes>
-					<Route path="/" element={<Home />} />
+					<Route path="/home" element={<Home />} />
+					<Route path="/" element={<Login />} />
 					<Route path="/login" element={<Login />} />
 					<Route path="/register" element={<Register />} />
 					<Route path="/profile" element={<ProfileView />} />
@@ -24,7 +24,6 @@ function App() {
 					<Route path="/request" element={<RequestForm />} />
 				</Routes>
 			</BrowserRouter>
-		</div>
 	);
 }
 

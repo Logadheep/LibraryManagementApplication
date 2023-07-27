@@ -1,6 +1,32 @@
-.about-page {
+div.about {
+    background: url(../HomePage/libraryhome.jpg) 100% no-repeat;
     height: 100vh;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    display: flex;
     justify-content: center;
-    margin:30vh;
+    align-items: center;
+    text-align: center;
+
 }
 
+.about-page {
+    width: 80%;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+.about-page h1 {
+    text-align: left;
+    margin-left: 40px;
+    margin-bottom: 20px;
+}
+
+.about-page p {
+    margin: 20px;
+    text-align: justify;
+    line-height: 1.5;
+}
